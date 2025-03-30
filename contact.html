@@ -1,11 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
-</head>
-<body>
-    
-</body>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- logo -->
+        <a href="/" class="logo"> <h1>E-Shop</h1> </a>
+
+        <!-- navigation -->
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+        <!-- menu buttons -->
+        <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <!-- Icons -->
+        <div class="nav-icons">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"
+            ><i class="fa-solid fa-cart-shopping"></i
+            ><span id="cart-count">3</span></a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Contact</h1>
+          <p>Get in touch with us</p>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h1>Contact Information</h1>
+            <div class="info">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h3>Address</h3>
+                <p>
+                  Ataturk Street No:123 <br />
+                  Kadikoy, Istanbul
+                </p>
+              </div>
+            </div>
+            <div class="info">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>+90 555 123 4567</p>
+              </div>
+            </div>
+            <div class="info">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>info@eshop.com</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <form class="contact-us">
+            <h1>Contact Us</h1>
+            <p>Your Name</p>
+            <input type="text" />
+            <p>Your Email</p>
+            <input type="email" />
+            <p>Subject</p>
+            <input type="text" />
+            <p>Your Message</p>
+            <textarea name="message"></textarea>
+
+            <div>
+              <button type="submit" class="submit-btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="location">
+        <div class="location-container">
+          <h1>Location</h1>
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19114.81269706839!2d29.00434342413779!3d41.01663103569537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab82bea99445f%3A0x6ed7f4baceb4476c!2sMaiden&#39;s%20Tower!5e0!3m2!1sen!2str!4v1743277970943!5m2!1sen!2str"
+              width="100%"
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <ul>
+            <li>Modern and quality products e-commerce platform</li>
+            <li>We have been serving our customer since 2010.</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> 123 Main St. City,
+              Country
+            </li>
+            <li><i class="fa-solid fa-phone"></i> +1 234 567 890</li>
+            <li><i class="fa-solid fa-envelope"></i> info@e-shop.com</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <div class="newsletter">
+            <h4>Subscribe to Newsletter</h4>
+
+            <form>
+              <input type="email" placeholder="Enter your e-mail" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy;2024 E-Shop. All rigths reserved. Created by
+          <span>Enes ARISOY</span>
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Policy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
